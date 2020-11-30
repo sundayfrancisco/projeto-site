@@ -1,7 +1,29 @@
 
+
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.hamburguer {
+    /*background-color: red;*/
+    width: 2rem;
+    right: 2rem;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.show-menu .hamburguer {
+    right: 16rem;
 }
 
 .img.wrapper {
@@ -9,6 +31,29 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 1);
 }
+
+.line {
+    width: 100%;
+    height: .1rem;
+    background-color: #ffffff;
+    box-shadow: 0.1rem 0.1rem 1px #000000;
+    transition: transform 1s;
+}
+
+.show-menu #line1 {
+    transform: rotate(45deg) translate(.3rem, .45rem);
+}
+
+.show-menu #line3 {
+    transform: rotate(135deg) translate(.3rem, .45rem);
+}
+
+.show-menu #line2 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
 
 header{
     width: 100%;
@@ -32,6 +77,7 @@ header{
 }
 
 .banner h1 {
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-size: 3.5rem;
     font-weight: 200;
@@ -41,6 +87,7 @@ header{
 }
 
 .banner p {
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-size: 2rem;
     text-shadow: 0.2rem 0.3rem 2px rgba(0, 0, 0, 1);
@@ -50,6 +97,7 @@ header{
 }
 
 .banner button {
+    font-family: Arial, Helvetica, sans-serif;
     color: black;
     background: #8E0E00;
     background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
@@ -86,3 +134,69 @@ header{
         opacity: 1;
     }
 }
+
+.sidebar {
+    width: 20rem;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 1s;
+}
+
+.show-menu .sidebar{
+    right: 0;
+}
+
+.menu {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item {
+    text-align: center;
+    margin-bottom: .5rem;
+    color: #8E0E00;
+    font-size: 2rem;
+    transition: color 1s;
+    cursor: pointer;
+
+}
+
+.menu.link {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-item:hover {
+    color: #000000;
+}
+
+.social-media {
+    position: absolute;
+    bottom: 2rem;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media i{
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: rgb(85, 35, 35);
+    transition: color 1s;
+}
+
+.social-media i:hover {
+    color: black;
+}
+
+
