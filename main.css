@@ -228,7 +228,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(73, 12, 12);
+    
 }
 
 .sessao-header h1 {
@@ -261,7 +261,7 @@ header{
 }
 
 .sessao-projetos {
-    background-color: rgb(73, 12, 12);
+    background-color: #cccc2b;
     height: 100vh;
     
 }
@@ -341,4 +341,28 @@ header{
     bottom: 2rem;
     opacity: 1;
     visibility: visible;
+}
+
+.sessao-contato {
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contato-wrapper {
+    width: 60%;
+    height: 30rem;
+    display: flex;
+}
+
+.contato-left {
+    width: 35%;
+    background: 
+    linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), 
+    url(email.jpg);
+    background-size: cover; /*foto de onlineprinters*/
 }
