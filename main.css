@@ -15,7 +15,7 @@ html {
 .hamburguer {
     /*background-color: red;*/
     width: 2rem;
-    right: 2rem;
+    height: 2rem;
     position: fixed;
     z-index: 160;
     right: 2rem;
@@ -46,11 +46,12 @@ html {
 
 
 .show-menu #line1 {
-    transform: rotate(45deg) translate(.3rem, .45rem);
+    transform: rotate(45deg) translate(1.2rem, .45rem);
 }
 
 .show-menu #line3 {
-    transform: rotate(135deg) translate(.3rem, .45rem);
+    transform: rotate(-45deg) translate(0.15rem, 0.45rem);;
+
 }
 
 .show-menu #line2 {
